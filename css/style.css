@@ -1,0 +1,39 @@
+* {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100%;
+
+    background-color: rgba(239, 236, 34, 0.973);
+
+}
+
+.clock {
+    margin: 20% auto;
+    padding: 30px;
+    width: 1300px;
+    border: 20px solid blue;
+    border-radius: 10px;
+    cursor: default;
+    user-select: none;
+    white-space: nowrap;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr 2fr 3fr;
+    gap: 20px;
+    justify-items: stretch;
+    font: 200px bold;
+    color: blue;
+}
+
+.clock-element {
+    justify-self: center;
+
+}
+
+.clock-element:last-child {
+    justify-self: end;
+}
